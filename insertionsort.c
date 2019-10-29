@@ -36,7 +36,7 @@ void insertionSort(int array[], int x){//vai receber o vetor e o tamanho desse v
     for(i=1;i<x;i++){//Pecorre o vetor do segundo valor ate o ultimo
         aux = array[i];//Pegando esse valor e armazenando
         j = i - 1;                                                                                                            //v           v            v 
-        while(j>=0 && array[j] > aux){//o segundo laço pecorre o vetor para trás empurrando o numero para o inicio do vetor - 5-3-4-1 = 3-5-4-1 => 3-4-5-1 => 1-3-4-5  
+        while(j>=0 && array[j] > aux){//o segundo laço pecorre o vetor para trás empurrando o numero para o inicio do vetor - 5-3-4-1 = 3-5-4-1 => 3-4-5-1 => 3-4-1-5 => 3-1-4-5 => 1-3-4-5  
             array[j+1] = array[j];
             j = j - 1;//decrementar
         }
