@@ -34,10 +34,10 @@ void bubbleSort(int array[], int x){ //vai receber o vetor e o tamanho desse vet
     int i,j, aux;
     for(i=0;i<x;i++){
         for(j=0;j<x-1-i;j++){//j<x-1-i pq no inicio meu i=0 ai depois vai fazer alteração ordenação**
-            if(array[j]>array[j+1]){// array[j] é o valor inicial e compara com o da frente ou seguinte elemento array[j+1] 
-                aux=array[j];//se for maior ele faz uma troca, criamos o auxiliar pra receber o array[j]
-                array[j]=array[j+1];//pra fazer a troca da nova posição
-                array[j+1]=aux;
+            if(array[j]>array[j+1]){// array[j] é o valor inicial e compara com o da frente ou seguinte elemento array[j+1] 5 > 3
+                aux=array[j];//se for maior ele faz uma troca, criamos o auxiliar pra receber o array[j] 5 fica armazenado no aux
+                array[j]=array[j+1];//pra fazer a troca da nova posição 3 vai para posição do 5
+                array[j+1]=aux;// 5 passa para posição do 3.Ex: i0 5-7-4-3-1 => i1 5-7-4-3-1 => i2 5-4-7-3-1 => i3 5-4-3-7-1 => i4 5-4-3-1-7 ai volta tudo de novo menos o ultimo termo
               
             }
         }
