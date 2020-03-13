@@ -81,28 +81,3 @@ int main(int argc, char *argv[]){
         
     return 0;
 }
-        
-/*Usando o argv para colocar as linhas, colunas e os argumentos
-int main(int argc, char *argv[]){
-    
-    int i, j, c, d,t,matrix,total;//Linhas,colunas,variavel do primeiro FOR,variavel de segundo FOR,pra ler os argumentos,total de elementos
-    int matriz[10][10];
-    
-    i = atoi(argv[1]);
-    j = atoi(argv[2]);
-    total = i * j;
-    
-    if(total != (argc - 3)){//argv[0],argv[1],argv[2]
-        printf("Numero é maior ou menor de elementos suportados pela matriz\n");
-    }else{
-        for(c = 0; c < i; c++){
-            for(d = 0;d < j;d++){
-                for(t = 3; t < argc; t++){
-                printf("A matriz na posição [%d][%d] é %d\n", c,d, atoi(argv[t]));
-                }
-            }
-        }
-    }
-    return 0;
-}*/
-                    
